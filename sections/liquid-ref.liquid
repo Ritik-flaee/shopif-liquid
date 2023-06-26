@@ -1,0 +1,40 @@
+<h1>Text</h1>
+{{ section.settings.liquid-ref }}
+
+<br/>
+
+<h1>Checkbox</h1>
+{% if section.settings.liquid-checkbox == true %}
+    Checkbox is Checked
+{% else %}
+    Checkbox is not Checked
+{% endif %}
+
+<br/>
+
+<h1>Number</h1>
+{% if section.settings.liquid-number > 0 %}
+{{ section.settings.liquid-number }}
+{% endif %}
+
+<br/>
+
+<h1>Radio</h1>
+{% if section.settings.liquid-radio == 'option-1' %}
+Option 1 is Selected
+{% else %}
+Option 2 is Selected
+{% endif %}
+
+<br/>
+
+<h1>Range</h1>
+{{ section.settings.liquid-range }}
+
+<br/>
+
+<h1>Select</h1>
+{{ section.settings.liquid-select }}
+
+<h1>Text Area</h1>
+{{ section.settings.liquid-textarea }}
