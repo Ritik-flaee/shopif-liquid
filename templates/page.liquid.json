@@ -6,9 +6,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "8913c96b-4c1a-41e2-bd0e-808cf44a1b87": {
+      "type": "liquid-object",
+      "settings": {
+        "liq-obj": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "8913c96b-4c1a-41e2-bd0e-808cf44a1b87"
   ]
 }
