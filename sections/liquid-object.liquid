@@ -63,10 +63,13 @@
 </ul>
 
 <h1>product.selected_variant</h1>
-{{ product.selected_variant.id }}
+{{ product.selected_variant.url }}
 
 <h1>variant.selected</h1>
 {{ variant.selected }}
+
+<h1>Add to cart Button</h1>
+<a href="{{ shop.domain }}/cart/add?id={{ product.selected_variant.id }}"> ADD To Cart</a>
 
 {% schema %}
   {
