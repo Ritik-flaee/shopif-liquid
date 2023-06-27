@@ -53,14 +53,14 @@
  <ul> 
   {% for variant in product.variants %}
 
-  <!-- <li>{{ variant.title }}</li> -->
-
+      <li><b>{{ variant.title }}</b></li>
+  <ul>
    {% for option in variant.options %}
 
       <li>{{ option }}</li>
 
    {% endfor %}
-
+  </ul>
   {% endfor %}
 </ul>
 
