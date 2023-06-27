@@ -47,7 +47,7 @@
 {{ product.created_at | date: "%b %d, %Y" }}
 
 <h1>product.featured_image</h1>
-{{ product.featured_image.src }}
+{{ product.featured_image.src | image_url: "height: 100px", "width: 100px" }}
 {{ product.featured_image.height }}
 {{ product.featured_image.width }}
 
