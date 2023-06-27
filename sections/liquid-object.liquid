@@ -23,9 +23,11 @@
 
 {{ request.page_type }}
 
-{% for script in scripts %}
-    {{ script.id }}
-{% endfor %}
+<!-- Product Objects -->
+
+<h1>Product Available</h1>
+{{ product.available }}
+<br/>
 
 {% schema %}
   {
