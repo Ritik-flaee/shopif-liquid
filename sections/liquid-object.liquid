@@ -54,6 +54,7 @@
   {% for variant in product.variants %}
      <li><b>{{ variant.title }}</b></li>
      <img src="{{ variant.image.src | image_url: width: 200 }}" alt="">
+     <a class="product-form__submit button button--full-width button--secondary" href="https://{{ shop.domain }}/cart/add?id={{ variant.id }}&quantity=1"> ADD To Cart</a>
   <ul>
    {% for option in variant.options %}
      <li>{{ option }}</li>
@@ -69,7 +70,7 @@
 {{ variant.selected }}
 
 <h1>Add to cart Button</h1>
-<a class="product-form__submit button button--full-width button--secondary" href="{{ shop.domain }}/cart/add?id={{ product.selected_variant.id }}&quantity=1"> ADD To Cart</a>
+
 
 {% schema %}
   {
