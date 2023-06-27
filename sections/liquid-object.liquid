@@ -50,19 +50,19 @@
 {{ product.featured_image | image_url }}
 
 <h1>product.variants</h1>
- <!--- <ul> -->
+ <ul> 
   {% for variant in product.variants %}
 
   <!-- <li>{{ variant.title }}</li> -->
 
    {% for option in variant.options %}
 
-      {{ option }}
+      <li>{{ option }}</li>
 
    {% endfor %}
 
   {% endfor %}
-<!-- </ul> -->
+</ul>
 
 
 {% schema %}
