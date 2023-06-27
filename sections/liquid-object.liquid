@@ -23,6 +23,10 @@
 
 {{ request.page_type }}
 
+{% for script in scripts %}
+    {{ script.id }}
+{% endfor %}
+
 {% schema %}
   {
     "name": "Liquid Objects",
