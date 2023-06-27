@@ -25,9 +25,14 @@
 
 <!-- Product Objects -->
 
-<h1>Product Available</h1>
+<h1>Product.Available</h1>
 {{ product.available }}
 <br/>
+
+<h1>Product.Collection</h1>
+{% for collection in collections %}
+      {{ collection.current_vendor }}
+{% endfor %}  
 
 {% schema %}
   {
