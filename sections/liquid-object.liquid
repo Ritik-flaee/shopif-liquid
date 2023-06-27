@@ -53,7 +53,7 @@
  <ul> 
   {% for variant in product.variants %}
      <li><b>{{ variant.title }}</b></li>
-     {{ variant.image.src | image_url }}
+     <img src="{{ variant.image.src | image_url }}" alt="">
   <ul>
    {% for option in variant.options %}
      <li>{{ option }}</li>
