@@ -48,6 +48,7 @@
 
 <h1>product.featured_image</h1>
 {{ product.featured_image.src | image_url }}
+{{ product.featured_image.src | image_url: width: 500 }}
 
 {% schema %}
   {
