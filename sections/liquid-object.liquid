@@ -69,7 +69,7 @@
 {{ variant.selected }}
 
 <h1>Add to cart Button</h1>
-<a href="{{ shop.domain }}/cart/add?id={{ product.selected_variant.id }}"> ADD To Cart</a>
+<a class="product-form__submit button button--full-width button--secondary" href="{{ shop.domain }}/cart/add?id={{ product.selected_variant.id }}&quantity=1"> ADD To Cart</a>
 
 {% schema %}
   {
