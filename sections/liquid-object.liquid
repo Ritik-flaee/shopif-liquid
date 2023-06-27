@@ -54,8 +54,13 @@
 
 <h1>product.first.available_variant</h1>
 {{ product.first_available_variant }}
+{% for the_variant in product.first_available_variant %}
+   
+{{ the.variant.title }}
 
-<h1>variant,options</h1>
+{% endfor %}
+
+<h1>variant.options</h1>
 {{ variant.options }}
 
 {% schema %}
