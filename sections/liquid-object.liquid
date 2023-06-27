@@ -94,7 +94,7 @@
 <!-- if cart item_count < 5 then show how many proudcts needed -->
 
 {% if cart.item_count < 5 %}
-        {% assign needed_for_discount = cart.itmes | minus: 5 %}
+        {% assign needed_for_discount = 5 | minus: cart.item_count %}
         ADD {{ needed_for_discount }} MORE PRODUCTS TO GET 20% OFF
 {% endif %}
 
