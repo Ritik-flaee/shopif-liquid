@@ -52,13 +52,11 @@
 <h1>product.variants</h1>
  <ul> 
   {% for variant in product.variants %}
-
-      <li><b>{{ variant.title }}</b></li>
+     <li><b>{{ variant.title }}</b></li>
+     {{ variant.image.src }}
   <ul>
    {% for option in variant.options %}
-
-      <li>{{ option }}</li>
-
+     <li>{{ option }}</li>
    {% endfor %}
   </ul>
   {% endfor %}
