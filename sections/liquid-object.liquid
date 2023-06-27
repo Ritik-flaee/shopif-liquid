@@ -79,7 +79,6 @@
   <li>cart.attribute</li>
   <li>cart.cart_level_discount_applications</li>
   <li>cart.currency</li>
-  <li>{{ cart.currency.symbol }}</li>
   <li>cart.discount_applications</li>
   <li>cart.item_count</li>
   <li>cart.items</li>
@@ -91,6 +90,13 @@
   <li>cart.total_price</li>
   <li>cart.total_weight</li>
 </ul>
+
+<!-- if cart item_count < 5 then show how many proudcts needed -->
+
+{% if cart.item_count < 5 %}
+        {% assign needed_for_discount = cart.itmes | minus: 5 %}
+        ADD {{ needed_for_discount }} MORE PRODUCTS TO GET 20% OFF
+{% endif %}
 
 {% schema %}
   {
