@@ -49,19 +49,11 @@
 <h1>product.featured_image</h1>
 {{ product.featured_image.src | image_url }}
 
-<h1>variant.available</h1>
-{{ variant.available }}
+<h1>product.variants</h1>
 
-<h1>product.first.available_variant</h1>
-{{ product.first_available_variant }}
-{% for the_variant in product.first_available_variant %}
-   
-{{ the.variant.title }}
-
+{% for variant in product.variants %}
+  {{ variant.title }}
 {% endfor %}
-
-<h1>variant.options</h1>
-{{ variant.options }}
 
 {% schema %}
   {
