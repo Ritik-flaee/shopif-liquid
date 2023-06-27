@@ -44,7 +44,7 @@
 {{ product.content }}
 
 <h1>product.created</h1>
-{{ product.created_at | date: "%b %d, %Y" }}
+<img src="{{ product.created_at | date: "%b %d, %Y" }}" alt="">
 
 <h1>product.featured_image</h1>
 {{ product.featured_image | image_url }}
