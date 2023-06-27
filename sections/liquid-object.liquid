@@ -44,7 +44,8 @@
 {{ product.content }}
 
 <h1>product.created</h1>
-{{ product.created_at }}
+{{ product.created_at | date: "%M", "%Y" }}
+
 {% schema %}
   {
     "name": "Liquid Objects",
