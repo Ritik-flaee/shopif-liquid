@@ -75,7 +75,7 @@
 
 <h1>Cart Object</h1>
 
-<ul>
+<!-- <ul>
   <li>cart.attribute</li>
   <li>cart.cart_level_discount_applications</li>
   <li>cart.currency</li>
@@ -89,14 +89,16 @@
   <li>cart.total_discount</li>
   <li>cart.total_price</li>
   <li>cart.total_weight</li>
-</ul>
+</ul> -->
 
 <!-- if cart item_count < 5 then show how many proudcts needed -->
 
 {% if cart.item_count < 5 %}
         {% assign needed_for_discount = 5 | minus: cart.item_count %}
-        ADD {{ needed_for_discount }} MORE PRODUCTS TO GET 20% OFF
-{% endif %}
+        <div class="alert page-width">
+            ADD {{ needed_for_discount }} MORE PRODUCTS TO GET 20% OFF
+        </div>
+{% endif %}     
 
 {% schema %}
   {
