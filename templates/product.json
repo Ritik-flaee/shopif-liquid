@@ -1,5 +1,11 @@
 {
   "sections": {
+    "4cc77173-e91a-4623-a9bb-a9c98e06c3f5": {
+      "type": "liquid-object",
+      "settings": {
+        "liq-obj": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -229,6 +235,7 @@
     }
   },
   "order": [
+    "4cc77173-e91a-4623-a9bb-a9c98e06c3f5",
     "main",
     "image-with-text",
     "multicolumn",
