@@ -76,6 +76,10 @@
 <h1>Cart Object</h1>
 <ul>
   <li>cart.attribute</li>
+  <p class="cart-attribute__field">
+  <label for="your-name">Your name</label>
+  <input id="your-name" type="text" name="attributes[Your name]" value="{{ cart.attributes["Your name"] }}">
+  </p>
   <li>cart.cart_level_discount_applications</li>
   <li>{{ cart.cart_level_discount_applications }}</li>
   <li>cart.currency</li>
