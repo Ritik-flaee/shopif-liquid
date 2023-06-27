@@ -48,7 +48,9 @@
 
 <h1>product.featured_image</h1>
 {{ product.featured_image.src | image_url }}
-{{ product.featured_image.src | image_url: width: 500 }}
+
+<h1>product.first.available_variant</h1>
+{{ product.first_available_variant }}
 
 {% schema %}
   {
