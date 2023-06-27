@@ -30,8 +30,8 @@
 <br/>
 
 <h1>Product.Collection</h1>
-{% for collection in collections %}
-      {{ collection.current_vendor }}
+{% for collection in product.collections %}
+      {{ collection.title }}
 {% endfor %}  
 
 {% schema %}
