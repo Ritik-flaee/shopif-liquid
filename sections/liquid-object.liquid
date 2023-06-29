@@ -106,11 +106,6 @@
   <li>{{ cart.total_weight }}</li>
 </ul>
 
-{% for product in collection.products %}
-
-    <h1>{{ product.title }}</h1>
-
-{% endfor %}
 <!-- if cart item_count < 5 then show how many proudcts needed -->
 
 {% if cart.item_count < 5 %}

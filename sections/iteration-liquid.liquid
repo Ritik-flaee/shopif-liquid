@@ -1,0 +1,24 @@
+{% for product in collection.products %}
+
+    <h1>{{ product.title }}</h1>
+
+{% endfor %}
+
+{% schema %}
+    {
+        "name": "Iteration-liquid",
+        "settings": [
+            {
+                "type": "text",
+                "id": "iteration-liq",
+                "label": "Add Your Text"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Iteration-liquid",
+                "category": "Reference"
+            }
+        ]
+    }
+{% endschema %}
