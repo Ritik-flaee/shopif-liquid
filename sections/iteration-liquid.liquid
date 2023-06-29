@@ -1,11 +1,14 @@
 <h1>Iteration Tags</h1>
 
-{% for product in collection.products offset: 1 %}
-   {{ product.title }}
+{% for product in collection.products limit: 1 %}
+   <h1>{{ product.title }}</h1>
 {% else %}
   No products!
 {% endfor %}
-
+{% for product in collection.products  %}
+    <h1>{{ product.price }}</h1>
+    {% break %}
+{% endfor %}
 
 
 {% schema %}
