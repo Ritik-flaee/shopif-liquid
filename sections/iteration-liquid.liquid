@@ -26,14 +26,30 @@
     {% endif %}  
  {% endfor %}
  <p>........................................................</p>
-| {% assign sp = 1 %}
-| {% assign bp = 10 %}
+ {% assign sp = 1 %}
+ {% assign bp = 10 %}
 {% for i in (sp..bp) %}
     {{ i }}
 {% endfor %}
 <p>........................................................</p>
 {% for i in (sp..bp) reversed %}
     {{ i }}
+{% endfor %}
+<p>........................Iteration 1................................</p>
+{% for i in (1..10) %}
+    {% cycle 'one', 'two', 'three' %}
+{% endfor %}
+<p>........................Iteration 2................................</p>
+{% for i in (1..10) %}
+    {% cycle 'one', 'two', 'three' %}
+{% endfor %}
+<p>........................Iteration 3................................</p>
+{% for i in (1..10) %}
+    {% cycle 'Group-1': 'one', 'two', 'three' %}
+{% endfor %}
+<p>........................Iteration 4................................</p>
+{% for i in (1..10) %}
+    {% cycle 'Group-2': 'one', 'two', 'three' %}
 {% endfor %}
 
 {% schema %}
