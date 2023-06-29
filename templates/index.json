@@ -230,6 +230,7 @@
     },
     "63c66f69-4b47-4675-a743-997ae46a02c3": {
       "type": "liquid-object",
+      "disabled": true,
       "settings": {
         "liq-obj": "hey"
       }
