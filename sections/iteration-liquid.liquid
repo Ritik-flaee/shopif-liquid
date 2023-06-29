@@ -140,7 +140,7 @@
    echo product.title
 %}
 <h1>Theme Tags</h1>
-{% javascript %}
+{% javascript  %}
     // the hello world program
    alert("Hello, World!");
 {% endjavascript %}
@@ -156,6 +156,29 @@
         background-color: red;
     }
 {% endstylesheet %}
+<h1>Variable Tags</h1>
+<p>.........................assign....................................</p>
+{% assign my_fav_food = kopta %}
+<p>I love {{ my_fav_food }}</p>
+<p>.........................capture...................................</p>
+{% assign name = 'Smith' %}
+{% assign color = 'Red' %}
+{% capture about_me %}
+    My name is {{ name }} and favorite color is {{ color }}
+{% endcapture %}
+echo about_me
+<p>.........................decrement.................................</p>
+{% for i in (1..5) %}
+    {{ i }}
+ {% decrement counter %}
+  echo counter
+{% endfor %}
+<p>.........................increment.................................</p>
+{% for i in (1..5) %}
+    {{ i }}
+ {% increment counter %}
+  echo counter
+{% endfor %}
 
 
 {% schema %}
