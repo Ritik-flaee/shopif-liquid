@@ -117,7 +117,7 @@
 <p>................................Echo...............................</p>
 {% echo product.title %}
 {% liquid
-    echo product.price
+    echo product.price | money_with_currency
 %}
 <p>...............................Liquid..............................</p>
 {% liquid
@@ -139,6 +139,23 @@
 {% liquid
    echo product.title
 %}
+<h1>Theme Tags</h1>
+{% javascript %}
+    // the hello world program
+   alert("Hello, World!");
+{% endjavascript %}
+<p>...........................Layout..................................</p>
+{% layout none %}
+<p>...........................render..................................</p>
+{% render 'icon-instagram' %}
+<p>...........................section.................................</p>
+{% section 'liquid-object' %}
+<p>.........................stylesheet................................</p>
+{% stylesheet %}
+    body{
+        background-color: red;
+    }
+{% endstylesheet %}
 
 
 {% schema %}
