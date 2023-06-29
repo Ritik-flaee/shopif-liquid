@@ -1,6 +1,6 @@
 <h1>Iteration Tags</h1>
 
-{% for product in collection.products limit: 1 %}
+{% for product in collection.products offset: 1 %}
   {{ product.title }}
 {% else %}
   No products!
