@@ -101,9 +101,44 @@
     {% endfor %}
 {% endpaginate %}
 
-
-
-
+<h1>Syntax Tags</h1>
+<p>............................comment................................</p>
+{% comment %}
+    HEY There
+{% endcomment %}
+<p>........................Inline comment.............................</p>
+{% # Hey %}
+<p>................Inline comment inside liquid tag...................</p>
+{% liquid
+    # this is a comment
+    assign topic = 'Learning Tags!' 
+    echo topic
+%}
+<p>................................Echo...............................</p>
+{% echo product.title %}
+{% liquid
+    echo product.price | money
+%}
+<p>...............................Liquid..............................</p>
+{% liquid
+    assign product_type = product.type | downcase
+    assign message = ''
+   
+    case product_type
+    when 'clothing'
+     assign message = 'This is recommended!'
+    else
+     assign message = 'must buy'     
+    endcase
+    echo message
+%}
+<p>.................................Raw...............................</p>
+{% raw %}
+    {{ product.title }}
+{% endraw %}
+{% liquid
+   echo product.title
+%}
 
 
 {% schema %}
