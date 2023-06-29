@@ -232,7 +232,13 @@
       "type": "liquid-object",
       "disabled": true,
       "settings": {
-        "liq-obj": "hey"
+        "liq-obj": "hjhkjhkl"
+      }
+    },
+    "fab085c1-1059-479f-a52c-5b3e51173df6": {
+      "type": "iteration-liquid",
+      "settings": {
+        "iteration-liq": "hi"
       }
     }
   },
@@ -243,6 +249,7 @@
     "collage",
     "video",
     "multicolumn",
-    "63c66f69-4b47-4675-a743-997ae46a02c3"
+    "63c66f69-4b47-4675-a743-997ae46a02c3",
+    "fab085c1-1059-479f-a52c-5b3e51173df6"
   ]
 }
