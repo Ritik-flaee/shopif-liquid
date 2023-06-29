@@ -161,24 +161,22 @@
 {% assign my_fav_food = 'kopta' %}
 <p>I love {{ my_fav_food }}</p>
 <p>.........................capture...................................</p>
-{% assign name = 'Smith' %}
-{% assign color = 'Red' %}
+{% assign fname = 'Smith' %}
+{% assign fcolor = 'Red' %}
 {% capture about_me %}
-    My name is {{ name }} and favorite color is {{ color }}
+    My name is {{ fname }} and favorite color is {{ fcolor }}
 {% endcapture %}
-echo about_me
+{{ about_me }}
 <p>.........................decrement.................................</p>
 {% for i in (1..5) %}
-    {{ i }}
- {% decrement counter %}
-  echo counter
+{% decrement counter %}
 {% endfor %}
+ {{ counter }}
 <p>.........................increment.................................</p>
-{% for i in (1..5) %}
-    {{ i }}
+{% for i in (1..10) %}
  {% increment counter %}
-  echo counter
 {% endfor %}
+  {{ counter }}
 
 
 {% schema %}
