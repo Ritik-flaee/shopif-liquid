@@ -94,8 +94,12 @@
         {{ product.title }}
     {% endfor %}
 {% endpaginate %}
-
-
+<p>...................................................................</p>
+{% paginate collection.products by 3, window_size: '1' %}
+    {% for product in collection.products %}
+        {{ product.title }}
+    {% endfor %}
+{% endpaginate %}
 
 
 
