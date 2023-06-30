@@ -7,7 +7,9 @@
 
 {% assign result = name | concat: age  %}
 
-{{ result }}
+{% for item in result %}
+    {{ item }}
+{% endfor %}
 
 {% schema %}
   {
