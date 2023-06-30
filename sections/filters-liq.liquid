@@ -95,9 +95,9 @@ Available Products:-
 {% endpaginate %}
 <p>............................................................Format.......................................................................</p>
 <p>............................................................date......................................................................................</p>
-1- {{ product.created_at | date: '%B %d, %Y' }}
+1- {{ article.created_at | date: '%B %d, %Y' }}
 2- {{ 'now' | date: '%B %d, %Y' }}
-3- {{ product.created_at | date: format: 'date_at_time' }}
+3- {{ article.created_at | date: format: 'date_at_time' }}
 
 
 
