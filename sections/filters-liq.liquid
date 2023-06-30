@@ -83,6 +83,10 @@ Available Products:-
 <p>.............................................................default....................................................................................................</p>
 {{ product.selected_variant.url | default: product.url }}
 
+{%- assign display_price = false -%}
+{{ display_price | default: true, allow_false: true }}
+
+
 
 
 
