@@ -45,7 +45,7 @@
 {% assign meows = "ral, ral, mahi, mahi, ritik, saleha, manu, manu" | split: ", " %}
 {{ meows | uniq | join: ", " }}
 <p>......................................................where...................................................</p>
-{% assign available_products = collection.products | where: 'collection', "Private" %}
+{% assign available_products = collection.products | where: 'vendor', "Ganesh-liquid" %}
 Available Products:- 
 {% for product in available_products %}
     - {{ product.title }}
