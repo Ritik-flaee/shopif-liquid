@@ -32,19 +32,23 @@
 {{ collection.products | size }}
 <p>...................................................sort and natural......................................................</p>
 <h5>sort</h5>
-{% assign position = collection.products | sort %}
-{{ position | join: ", " }}
+{% assign position = collection.products | sort: 'price' %}
+{% for product in position %}
+    {{ product.title }}
+{% endfor %}
 <h5>sort natural</h5>
-{% assign positions = collection.products | sort_natural %}
-{{ positions | join: ", " }}
+{% assign positions = collection.products | sort_natural: 'title' %} 
+{% for product in positions %}
+    {{ product.title }}
+{% endfor %}
 <p>......................................................uniq...................................................</p>
 {% assign meows = "ral, ral, mahi, mahi, ritik, saleha, manu, manu" | split: ", " %}
-{{ meows | uniq | join: ", "  }}
+{{ meows | uniq | join: ", " }}
 <p>......................................................where...................................................</p>
 {% assign available_products = collection.products | where: 'available' %}
 Available Products:- 
-{% for product in collection.products %}
-    - {{ available_products }}
+{% for product in available_products %}
+    - {{ product.title }}
 {% endfor %}
 
 
