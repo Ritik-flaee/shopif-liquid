@@ -104,6 +104,7 @@ Available Products:-
 {% assign variant = product.variants.first %}
 
 {{ variant.weight | weight_with_unit }}
+
 {{ variant.weight | weight_with_unit: variant.weight_unit }}
 
 
