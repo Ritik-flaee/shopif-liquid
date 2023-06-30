@@ -28,6 +28,30 @@
 
 <h4>Reverse</h4>
 {{ collection.products | reverse | map: 'title' | join: ", " }}
+<p>...................................................size......................................................</p>
+{{ collection.products | size }}
+<p>...................................................sort and natural......................................................</p>
+<h5>sort</h5>
+{% assign position = collection.products | sort %}
+{{ position | join: ", " }}
+<h5>sort natural</h5>
+{% assign positions = collection.products | sort_natural %}
+{{ positions | join: ", " }}
+<p>......................................................uniq...................................................</p>
+{% assign meows = "ral, ral, mahi, mahi, ritik, saleha, manu, manu" | split: ", " %}
+{{ meows | uniq | join: ", "  }}
+<p>......................................................where...................................................</p>
+{% assign available_products = collection.products | where: 'available' %}
+Available Products:- 
+{% for product in collection.products %}
+    - {{ available_products }}
+{% endfor %}
+
+
+
+
+
+
 
 
 {% schema %}
