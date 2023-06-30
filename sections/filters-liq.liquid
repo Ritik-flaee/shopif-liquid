@@ -106,7 +106,15 @@ Available Products:-
 {{ variant.weight | weight_with_unit }}
 
 {{ variant.weight | weight_with_unit: variant.weight_unit }}
-
+<p>.............................................................HTML.............................................................................</p>
+<p>.............................................................highlight..........................................................................</p>
+{% for item in search.results %}
+    {% if item.object_type == 'product' %}
+      {{ item.description | highlight: search.terms }}
+    {% else %}
+      {{ item.content | highlight: search.terms }}
+    {% endif %}
+  {% endfor %}
 
 
 
