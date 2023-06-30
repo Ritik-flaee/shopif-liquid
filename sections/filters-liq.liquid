@@ -21,7 +21,7 @@
 {{ names | join: ", " }}
 <p>...................................................map......................................................</p>
 {% assign product_name = collection.products | map: 'title' %}
-{{ product_name }}
+{{ product_name | join: ','  }}
  
 
 {% schema %}
