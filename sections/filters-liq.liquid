@@ -7,7 +7,9 @@
 
 {% assign result = name | concat: age %}
 
-<P>{{ result  }}</P>
+{% for item in result %}
+    <li>{{ item }}</li>
+{% endfor %}
 
 
 
