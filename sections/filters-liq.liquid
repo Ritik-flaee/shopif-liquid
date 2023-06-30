@@ -10,16 +10,18 @@
 {% for item in result %}
     <li>{{ item }}</li>
 {% endfor %}
-<p>...................................................first......................................................</p>
+<p>...................................................first & Last......................................................</p>
 {% assign first_product = collection.products | first %}
-
-{{ first_product.title }}
+{% assign last_product = collection.products | last %}
+{{ first_product.title }} <br>
+{{ last_product.title }}
 <p>...................................................join......................................................</p>
 {% assign names = 'Ritik, Akku, Ral, Mahi, Saleha' | split: ", " %}
-{{ names }}
+{{ names }} <br>
 {{ names | join: ", " }}
-
-
+<p>...................................................title......................................................</p>
+{% assign product_variants = collection.products | map: 'variants' %}
+{{ product_variants }}
 
 
 
