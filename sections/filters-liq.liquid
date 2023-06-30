@@ -3,10 +3,11 @@
 <p>...................................................Array......................................................</p>
 
 {% assign name = "Ishan, Manoj, Gaurav, Sneha, Rahul, Mahima, Akansha" %}
-{% assign rank = "1, 2, 3, 4, 5, 6, 7" %}
+{% assign age = "11, 29, 37, 24, 25, 26, 17" %}
 
-{{ name }}
+{% assign result = name | concat: age  %}
 
+{{ result }}
 
 {% schema %}
   {
