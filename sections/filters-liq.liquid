@@ -11,7 +11,7 @@
     <li>{{ item }}</li>
 {% endfor %}
 <p>...................................................first......................................................</p>
-{% assign first_product = collections.products %}
+{% assign first_product = collection.products | first%}
 
 {{ first_product.title }}
 
