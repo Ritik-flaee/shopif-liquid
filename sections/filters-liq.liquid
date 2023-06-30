@@ -85,7 +85,14 @@ Available Products:-
 
 {%- assign display_price = false -%}
 {{ display_price | default: true, allow_false: true }}
+<p>...........................................................default_pagination...................................................................................</p>
+{% paginate collection.products by 2 %}
+    {% for product in collection.products %}
+        {{ product.title }}
+    {% endfor %}
 
+    {{ paginate | default_pagination }}
+{% endpaginate %}
 
 
 
