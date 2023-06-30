@@ -1,7 +1,14 @@
 {
   "sections": {
+    "6e217b6f-4780-43f8-8c54-4d63c18c97cf": {
+      "type": "filters-liq",
+      "settings": {
+        "filters-liq": ""
+      }
+    },
     "4cc77173-e91a-4623-a9bb-a9c98e06c3f5": {
       "type": "liquid-object",
+      "disabled": true,
       "settings": {
         "liq-obj": ""
       }
@@ -331,6 +338,7 @@
     }
   },
   "order": [
+    "6e217b6f-4780-43f8-8c54-4d63c18c97cf",
     "4cc77173-e91a-4623-a9bb-a9c98e06c3f5",
     "main",
     "image-with-text",
