@@ -2,14 +2,12 @@
 
 <p>...................................................Array......................................................</p>
 
-{% assign name = "Ishan, Manoj, Gaurav, Sneha, Rahul, Mahima, Akansha" %}
-{% assign age = "11, 29, 37, 24, 25, 26, 17" %}
-
-{% assign result = name | concat: age  %}
-
-{% for item in result %}
-    {{ item }}
-{% endfor %}
+{% liquid
+    assign name = "Rahul, Mahima, Akku, Ritik"
+    assign age = "29, 24, 17, 23"
+    assign result = name | concat: age
+    echo result
+%}
 
 {% schema %}
   {
