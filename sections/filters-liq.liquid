@@ -100,7 +100,10 @@ Available Products:-
 3- {{ article.created_at | date: format: 'date_at_time' }}
 <p>............................................................json........................................................................</p>
 {{ product | json }}
+<p>.............................................................weight_with_unit............................................................................</p>
+{% assign variant = product.variants.first %}
 
+{{ variant.weight | weight_with_unit }}
 
 
 
