@@ -19,9 +19,9 @@
 {% assign names = 'Ritik, Akku, Ral, Mahi, Saleha' | split: ", " %}
 {{ names }} <br>
 {{ names | join: ", " }}
-<p>...................................................title......................................................</p>
-{% assign product_variants = collection.products | map: 'variants' %}
-{{ product_variants }}
+<p>...................................................map......................................................</p>
+{% assign product_name = collection.products | map: 'title' %}
+{{ product_name }}
  
 
 {% schema %}
