@@ -11,9 +11,13 @@
     <li>{{ item }}</li>
 {% endfor %}
 <p>...................................................first......................................................</p>
-{% assign first_product = collection.products | first%}
+{% assign first_product = collection.products | first %}
 
 {{ first_product.title }}
+<p>...................................................join......................................................</p>
+{% assign names = 'Ritik, Akku, Ral, Mahi, Saleha' | split: ", " %}
+{{ names | join: ", " }}
+
 
 
 
