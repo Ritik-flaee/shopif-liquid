@@ -237,8 +237,15 @@
     },
     "fab085c1-1059-479f-a52c-5b3e51173df6": {
       "type": "iteration-liquid",
+      "disabled": true,
       "settings": {
-        "iteration-liq": "hi"
+        "iterat-liq": ""
+      }
+    },
+    "3562d2dd-263f-4487-adf0-cae14b333469": {
+      "type": "filters-liq",
+      "settings": {
+        "filters-liq": ""
       }
     }
   },
@@ -250,6 +257,7 @@
     "video",
     "multicolumn",
     "63c66f69-4b47-4675-a743-997ae46a02c3",
-    "fab085c1-1059-479f-a52c-5b3e51173df6"
+    "fab085c1-1059-479f-a52c-5b3e51173df6",
+    "3562d2dd-263f-4487-adf0-cae14b333469"
   ]
 }
