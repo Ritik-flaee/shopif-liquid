@@ -1,28 +1,28 @@
-<h1>Does it works?????</h1>
+<h1>Filters</h1>
 
+<p>...................................................Array......................................................</p>
 
-
-
-
-
-
+{% assign name = "Ishan, Manoj, Gaurav, Sneha, Rahul, Mahima, Akansha" %}
+{% assign rank = "1, 2, 3, 4, 5, 6, 7" %}
+{% assign rankers = name | concat: rank %}
+{{ rankers }}
 
 
 {% schema %}
-    {
+  {
+    "name": "Filters Liquid",
+    "settings": [
+      {
+        "type": "text",
+        "id": "filters-liq",
+        "label": "Add Your Text"
+      }
+    ],
+    "presets": [
+      {
         "name": "Filters Liquid",
-        "settings": [
-            {
-              "type": "text",
-              "id": "filters-liq",
-              "label": "Add Your Text"
-            }
-        ],
-        "presets": [
-            {
-                "name": "Filters Liquid",
-                "category": "Reference"
-            }
-        ]
-    }
+        "category": "Reference"
+      }
+    ]
+  }
 {% endschema %}
