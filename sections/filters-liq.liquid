@@ -6,8 +6,11 @@
     assign name = "Rahul, Mahima, Akku, Ritik"
     assign age = "29, 24, 17, 23"
     assign result = name | concat: age
-    echo result
 %}
+{% for item in result %}
+    {{ item }}
+{% endfor %}
+
 
 {% schema %}
   {
