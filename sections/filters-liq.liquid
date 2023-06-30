@@ -19,10 +19,16 @@
 {% assign names = 'Ritik, Akku, Ral, Mahi, Saleha' | split: ", " %}
 {{ names }} <br>
 {{ names | join: ", " }}
-<p>...................................................map......................................................</p>
+<p>.....................................................map..........................................................</p>
 {% assign product_name = collection.products | map: 'title' %}
 {{ product_name | join: ", " }}
- 
+<p>...................................................reverse......................................................</p>
+<h4>Original</h4>
+{{ collection.products | map: 'title' | join: ", " }}
+
+<h4>Reverse</h4>
+{{ collection.products | map: 'title' | join: ", " | reverse }}
+
 
 {% schema %}
   {
