@@ -27,7 +27,7 @@
 {{ collection.products | map: 'title' | join: ", " }}
 
 <h4>Reverse</h4>
-{{ collection.products | map: 'title' | join: ", " | reverse }}
+{{ collection.products | reverse | map: 'title' | join: ", " }}
 
 
 {% schema %}
