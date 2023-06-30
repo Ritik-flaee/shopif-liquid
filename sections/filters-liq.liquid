@@ -20,10 +20,9 @@
 {{ names }} <br>
 {{ names | join: ", " }}
 <p>...................................................title......................................................</p>
-{% assign product_variants = collection.products | map: 'variants' %}
+{% assign product_variants = collection.products | map: 'variants ' %}
 {{ product_variants }}
-
-
+ 
 
 {% schema %}
   {
