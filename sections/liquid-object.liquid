@@ -152,7 +152,6 @@ if cart item_count < 5 then show how many proudcts needed -->
 $('input#Quantity-1.quantity_input').on('change', function() {
   console.log('qty changed!');
    fetchTheCart();
-   updateCartAlerts();
 });
 
 function updateCartAlerts() {
@@ -167,6 +166,7 @@ function fetchTheCart () {
   cartContents.then(function(result) {
   var count = result.item_count;
   return count;
+  updateCartAlerts(count);
 }, function(err) {
   console.log(err);
 });
