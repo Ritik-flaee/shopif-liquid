@@ -147,11 +147,11 @@ if cart item_count < 5 then show how many proudcts needed -->
 
 <!-- Check Shopify Cart API WHEN CART Updates -->
 
-{% javascript %}
+{% javascript %} 
 
-jQuery.get('/cart.js', function (cart) {
-   console.log(cart.items.quantity);
-});
+  jQuery.get('/cart.js', function (cart) {
+     console.log(cart.items.quantity);
+}); 
 
 {% endjavascript %}
 
