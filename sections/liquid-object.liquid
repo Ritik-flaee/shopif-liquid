@@ -149,7 +149,7 @@ if cart item_count < 5 then show how many proudcts needed -->
 
 {% javascript %} 
 
-$('cart-items').on(change, function () {
+$('cart-items').on(change, function (event) {
 
   console.log('qty changed!');
   console.log(event);
