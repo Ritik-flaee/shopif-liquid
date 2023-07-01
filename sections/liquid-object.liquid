@@ -131,22 +131,27 @@ if cart item_count < 5 then show how many proudcts needed -->
 .alert.warning {
   background: #feffc0;
 }
+
 .alert.success {
   background: #ddffd2;
 }
-  .alert {
+
+ .alert {
     padding: 2rem;
     margin-top: 4rem;
     text-align: center;
     font-weight: bold;
-}
+ }
+
 {% endstylesheet %}
 
 <!-- Check Shopify Cart API WHEN CART Updates -->
 
 {% javascript %}
 
-
+jQuery.get('/cart.js', function (cart) {
+   console.log(cart.items.quantity);
+});
 
 {% endjavascript %}
 
