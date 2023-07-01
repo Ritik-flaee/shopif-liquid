@@ -149,18 +149,29 @@ if cart item_count < 5 then show how many proudcts needed -->
 
 {% javascript %} 
 
-$('cart-items').on('change', function() {
-  alert('Cart Update');
+$('input#Quantity-1.quantity_input').on('change', function() {
+   fetchTheCart();
+   updateCartAlerts();
 });
-$.ajax({
-  type: 'GET',
-  url: '/cart.js',
-  cache: false,
-  dataType: 'json',
-  success: function(cart){
-    console.log(cart.item_count);
-  }
+
+function updateCartAlerts() {
+  console.log(count);
+}
+
+function fetchTheCart () {
+  var cartContents = fetch('/cart.js')
+  .then(response => response.json())
+  .then(data => { return data });
+
+  cartContents.then(function(result) {
+  var count = result.item_count;
+  return count;
+}, function(err) {
+  console.log(err);
 });
+}
+
+
 
 {% endjavascript %}
 
