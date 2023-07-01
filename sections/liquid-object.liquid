@@ -150,7 +150,7 @@ if cart item_count < 5 then show how many proudcts needed -->
 {% javascript %} 
 
   jQuery.get('/cart.js', function (cart) {
-     console.log(cart.items.quantity);
+     console.log(cart.items_count);
 }); 
 
 {% endjavascript %}
