@@ -2,6 +2,13 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "5a510c33-21e0-44ff-a59c-da2072d5734d": {
+      "type": "gallery",
+      "settings": {
+        "gallery_image": "shopify:\/\/shop_images\/download_1.jpg",
+        "gallery_title": "Nirma"
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -49,6 +56,7 @@
     }
   },
   "order": [
+    "5a510c33-21e0-44ff-a59c-da2072d5734d",
     "footer"
   ]
 }
