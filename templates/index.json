@@ -237,8 +237,9 @@
         "625b8422-1c6c-47ce-8f13-41493b137112": {
           "type": "column",
           "settings": {
-            "title": "",
-            "link": ""
+            "myImage": "shopify:\/\/shop_images\/tshirt1.jpg",
+            "title": "RRR",
+            "link": "shopify:\/\/products\/tshirt"
           }
         }
       },
