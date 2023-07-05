@@ -1,64 +1,47 @@
-<div class="footer_img">
-    
-   {% if section.settings.footer_img %}
-         <img src="{{ section.settings.footer_img | img_url: "600x"}}" >
-   {% endif %}
- 
-
-   <hr>
-
-   <div class="gallery">
-    {% for block in section.blocks %}
-        <div class="gallery_item">
-            {% if block.settings %}
-                {% if block.settings.enable_gallery-img %}
-                    <img src="{{ block.settings.gallery_img | img_url: "400x" }}" alt="">
-                {% endif %}
-            {% endif %}
-        </div>
-    {% endfor %}
-   </div>
-</div>
-
+{% for block in section.blocks %}
+    <div class="image-column">
+      <img src="{{ block.settings.image_1 | img_url: 'medium' }}" alt="Image 1">
+    </div>
+  {% endfor %}
 
 {% schema %}
     {
-        "name": "Footer Gallery",
-        "settings": [
-            {  
-              "id": "footer_img" , 
+      "name": "3 Column Image Section",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "image",
+          "name": "Column 1",
+          "settings": [
+            {
               "type": "image_picker",
-              "label": "Select Image"
-            },
-            {
-                "id": "image_title",
-                "type": "text",
-                "label": "Title"
+              "label": "Image",
+              "id": "image_1"
             }
-        ],
-        "blocks": [
+          ]
+        },
+        {
+          "type": "image",
+          "name": "Column 2",
+          "settings": [
             {
-                "type": "gallery",
-                "name": "Gallery",
-                "settings": [
-                   {
-                    "id": "enable_gallery-img",
-                    "type": "checkbox",
-                    "label": "Enable Gallery Image",
-                    "default": false
-                   },
-                   {  
-                     "id": "gallery_img" , 
-                     "type": "image_picker",
-                     "label": "Gallery Image"
-                   }
-                ]
+              "type": "image_picker",
+              "label": "Image",
+              "id": "image_2"
             }
-        ],
-        "presets": [
+          ]
+        },
+        {
+          "type": "image",
+          "name": "Column 3",
+          "settings": [
             {
-                "name": "Footer Gallery"
+              "type": "image_picker",
+              "label": "Image",
+              "id": "image_3"
             }
-        ]
+          ]
+        }
+      ]
     }
-{% endschema %}
+    {% endschema %}
