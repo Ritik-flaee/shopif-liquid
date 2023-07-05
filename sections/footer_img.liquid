@@ -1,0 +1,32 @@
+<div class="footer_img">
+    
+   {% if section.settings.footer_img %}
+         <img src="{{ section.settings.footer_img | img_url: "600x"}}" >
+   {% endif %}
+ 
+</div>
+
+
+
+{% schema %}
+    {
+        "name": "Footer Gallery",
+        "settings": [
+            {  
+              "id": "footer_img" , 
+              "type": "image_picker",
+              "label": "Select Image"
+            },
+            {
+                "id": "image_title",
+                "type": "text",
+                "label": "Title"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Footer Gallery"
+            }
+        ]
+    }
+{% endschema %}
