@@ -225,10 +225,27 @@
             "title": "Black Tshirt",
             "link": "shopify:\/\/products\/planet"
           }
+        },
+        "88b24450-0b6c-448b-9ec4-f8a9cf2b29cf": {
+          "type": "column",
+          "settings": {
+            "myImage": "shopify:\/\/shop_images\/red.jpg",
+            "title": "Red Tshirt",
+            "link": "shopify:\/\/products\/funky-tshirt"
+          }
+        },
+        "625b8422-1c6c-47ce-8f13-41493b137112": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "011dc2c7-537a-494e-b7a6-e761d975658a"
+        "011dc2c7-537a-494e-b7a6-e761d975658a",
+        "88b24450-0b6c-448b-9ec4-f8a9cf2b29cf",
+        "625b8422-1c6c-47ce-8f13-41493b137112"
       ],
       "settings": {
       }
