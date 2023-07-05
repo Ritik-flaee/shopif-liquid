@@ -1,0 +1,14 @@
+<h1>Cart</h1>
+
+{% if cart.empty? %}
+<div class="cart-empty">
+    <p>Your cart is empty.</p>
+    <a class="button" href="/">Keep shopping</a>
+</div>
+
+
+{% else %}
+    {% for item in cart.items %}
+        {% render 'cart-item', item: item %}
+    {% endfor %}
+{% endif %}
