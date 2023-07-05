@@ -1,5 +1,5 @@
 <style>
-  .multicolumn-section {
+  .multicolumn-section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,11 +24,11 @@
   }
 </style>
 
-<div class="multicolumn-section">
+<div class="multicolumn-section1">
   {% for block in section.blocks %}
     <div class="column">
       <a href="{{ block.settings.link }}">
-        <img src="{{ block.settings.myImage | img_url }}" alt="Column Image">
+        <img src="{{ block.settings.myImage | img_url: 'medium' }}">
       </a>
       <h2>
         <a href="{{ block.settings.link }}">{{ block.settings.title }}</a>
