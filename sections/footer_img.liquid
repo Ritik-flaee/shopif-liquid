@@ -4,6 +4,20 @@
          <img src="{{ section.settings.footer_img | img_url: "600x"}}" >
    {% endif %}
  
+
+   <hr>
+
+   <div class="gallery">
+    {% for block in section.blocks %}
+        <div class="gallery_item">
+            {% if block.settings. %}
+                {% if block.settings.enable_gallery-img %}
+                    <img src="{{ block.settings.gallery_img | img_url: "400x" }}" alt="">
+                {% endif %}
+            {% endif %}
+        </div>
+    {% endfor %}
+   </div>
 </div>
 
 
@@ -21,6 +35,25 @@
                 "id": "image_title",
                 "type": "text",
                 "label": "Title"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "gallery",
+                "name": "Gallery",
+                "settings": [
+                   {
+                    "id": "enable_gallery-img",
+                    "type": "checkbox",
+                    "label": "Enable Gallery Image",
+                    "default": false
+                   },
+                   {  
+                     "id": "gallery_img" , 
+                     "type": "image_picker",
+                     "label": "Gallery Image"
+                   }
+                ]
             }
         ],
         "presets": [
