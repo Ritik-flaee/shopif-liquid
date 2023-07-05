@@ -2,11 +2,9 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Image banner",
             "heading_size": "h0"
@@ -14,7 +12,6 @@
         },
         "text": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
@@ -22,7 +19,6 @@
         },
         "button": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
@@ -39,6 +35,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/myheader.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -53,11 +50,9 @@
     },
     "rich_text": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Talk about your brand",
             "heading_size": "h1"
@@ -65,7 +60,6 @@
         },
         "text": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
@@ -86,7 +80,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -115,18 +108,15 @@
     },
     "collage": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": ""
           }
         },
         "product": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "",
             "second_image": false
@@ -134,7 +124,6 @@
         },
         "collection-1": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": ""
           }
@@ -158,7 +147,6 @@
     },
     "video": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -173,11 +161,9 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -187,7 +173,6 @@
         },
         "column2": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -197,7 +182,6 @@
         },
         "column3": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -227,26 +211,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "63c66f69-4b47-4675-a743-997ae46a02c3": {
-      "type": "liquid-object",
-      "disabled": true,
-      "settings": {
-        "liq-obj": "hjhkjhkl"
-      }
-    },
-    "fab085c1-1059-479f-a52c-5b3e51173df6": {
-      "type": "iteration-liquid",
-      "disabled": true,
-      "settings": {
-        "iterat-liq": ""
-      }
-    },
-    "3562d2dd-263f-4487-adf0-cae14b333469": {
-      "type": "filters-liq",
-      "settings": {
-        "filters-liq": ""
-      }
     }
   },
   "order": [
@@ -255,9 +219,6 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn",
-    "63c66f69-4b47-4675-a743-997ae46a02c3",
-    "fab085c1-1059-479f-a52c-5b3e51173df6",
-    "3562d2dd-263f-4487-adf0-cae14b333469"
+    "multicolumn"
   ]
 }
