@@ -8,7 +8,7 @@
   }
 
   .column {
-    flex: 1 0 300px;
+    flex: 0 0 300px;
     padding: 10px;
     background-color: #ffffff;
     border: 1px solid #ffffff;
@@ -61,7 +61,40 @@
 {% schema %}
 {
     "name": "Gallery",
-    "settings": [],
+    "settings": [
+      {
+        "type": "range",
+        "label": "Select Number Of Columns",
+        "id": "numColumns",
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "default": 3
+      },
+      {
+        "type": "image_picker",
+        "label": "Default Image",
+        "id": "defaultImage"
+      },
+      {
+        "type": "text",
+        "label": "Default Title",
+        "id": "defaultTitle",
+        "default": "Default Title"
+      },
+      {
+        "type": "color",
+        "label": "Title Color",
+        "id": "titleColor",
+        "default": "#000000"
+      },
+      {
+        "type": "font_picker",
+        "label": "Title Font",
+        "id": "titleFont",
+        "default": "Arial" 
+      }
+    ],
     "blocks": [
         {
             "type": "column",
@@ -88,7 +121,7 @@
     "presets": [
       {
         "name": "Gallery",
-        "category": "Reference"
+        "category": "Custom"
       }
     ]
 }
