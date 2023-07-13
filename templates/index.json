@@ -35,16 +35,18 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/leather-jacket-and-tea_925x_384e62e7-5dd1-400d-b57c-39f43cb215e0.jpg",
+        "image_2": "shopify:\/\/shop_images\/menswear-blue-zip-up-jacket_925x_84034e80-83b4-45fd-a630-46782dff9d3f.jpg",
+        "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "inverse",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text": {
@@ -81,16 +83,16 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
+        "heading_size": "h1",
+        "description": "<p>Apna shope<\/p>",
+        "show_description": true,
         "description_style": "body",
         "collection": "new-collection",
         "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
+        "columns_desktop": 5,
+        "full_width": true,
         "show_view_all": false,
-        "view_all_style": "solid",
+        "view_all_style": "link",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
