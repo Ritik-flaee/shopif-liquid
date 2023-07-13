@@ -35,7 +35,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/myheader.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -148,8 +147,8 @@
     "video": {
       "type": "video",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
+        "heading": "Shart-s",
+        "heading_size": "h0",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -165,7 +164,6 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/planet2.jpg",
             "title": "Column",
             "text": "",
             "link_label": "",
@@ -175,7 +173,6 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/social2.jpg",
             "title": "Column",
             "text": "<p>.<\/p>",
             "link_label": "",
@@ -185,7 +182,6 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cactus1.jpg",
             "title": "Column",
             "text": "",
             "link_label": "",
@@ -221,7 +217,6 @@
         "011dc2c7-537a-494e-b7a6-e761d975658a": {
           "type": "column",
           "settings": {
-            "myImage": "shopify:\/\/shop_images\/planet2.jpg",
             "title": "Black Tshirt",
             "link": "shopify:\/\/products\/planet"
           }
@@ -229,7 +224,6 @@
         "88b24450-0b6c-448b-9ec4-f8a9cf2b29cf": {
           "type": "column",
           "settings": {
-            "myImage": "shopify:\/\/shop_images\/social2.jpg",
             "title": "Red Tshirt",
             "link": "shopify:\/\/products\/funky-tshirt"
           }
@@ -237,7 +231,6 @@
         "625b8422-1c6c-47ce-8f13-41493b137112": {
           "type": "column",
           "settings": {
-            "myImage": "shopify:\/\/shop_images\/cactus1.jpg",
             "title": "RRR",
             "link": "shopify:\/\/products\/tshirt"
           }
