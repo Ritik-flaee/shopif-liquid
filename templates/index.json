@@ -167,10 +167,11 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/young-man-in-bright-fashion_925x_c0385334-fc66-410b-9b0d-d4b3abf88757.jpg",
+            "title": "print ted sharts",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/collections"
           }
         },
         "column2": {
