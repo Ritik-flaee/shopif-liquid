@@ -177,7 +177,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/woman-in-the-city_925x_2997ec80-8f91-47e1-a0b5-37c63505f807.jpg",
+            "title": "black",
             "text": "<p>.<\/p>",
             "link_label": "",
             "link": ""
@@ -186,6 +187,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/smiling-woman-poses_925x_06a3a3a5-3df0-43f9-8d12-c91733eda130.jpg",
             "title": "Column",
             "text": "",
             "link_label": "",
