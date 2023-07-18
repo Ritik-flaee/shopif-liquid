@@ -110,12 +110,6 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
         "product": {
           "type": "product",
           "settings": {
@@ -123,17 +117,17 @@
             "second_image": false
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "1c06145f-6a97-4d31-b163-e6d3d97333b2": {
+          "type": "product",
           "settings": {
-            "collection": "frontpage"
+            "product": "dark-denim-top",
+            "second_image": false
           }
         }
       },
       "block_order": [
-        "collection-0",
         "product",
-        "collection-1"
+        "1c06145f-6a97-4d31-b163-e6d3d97333b2"
       ],
       "settings": {
         "heading": "Multimedia collage",
