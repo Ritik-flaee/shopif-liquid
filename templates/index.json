@@ -82,12 +82,12 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "MAX Product",
         "heading_size": "h1",
         "description": "<p>Apna shope<\/p>",
         "show_description": true,
         "description_style": "body",
-        "collection": "new-collection",
+        "collection": "frontpage",
         "products_to_show": 8,
         "columns_desktop": 5,
         "full_width": true,
