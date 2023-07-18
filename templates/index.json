@@ -119,7 +119,7 @@
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "classic-varsity-top",
             "second_image": false
           }
         },
