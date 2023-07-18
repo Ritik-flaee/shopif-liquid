@@ -1,6 +1,8 @@
 {
   "current": {
+    "logo": "shopify:\/\/shop_images\/autumn-photographer-taking-picture_925x_01e2e438-d889-424e-95b3-f0a9cac9195e.jpg",
     "logo_width": 90,
+    "favicon": "shopify:\/\/shop_images\/smiling-woman-poses_925x_06a3a3a5-3df0-43f9-8d12-c91733eda130.jpg",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -182,6 +184,17 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-7b01c44c-b4f1-4d62-acb5-9cc1c4bbbb31": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }
