@@ -88,7 +88,7 @@
         "show_description": true,
         "description_style": "body",
         "collection": "monsoon",
-        "products_to_show": 8,
+        "products_to_show": 10,
         "columns_desktop": 5,
         "full_width": true,
         "show_view_all": false,
