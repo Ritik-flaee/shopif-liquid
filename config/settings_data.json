@@ -388,7 +388,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ". card {border-radius:50px}"
+      ". card {border-radius: 100px;}"
     ]
   }
 }
