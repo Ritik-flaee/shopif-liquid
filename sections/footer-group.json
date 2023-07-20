@@ -2,18 +2,13 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "1b6d961e-4892-416c-ad3f-cd3624635db8": {
-      "type": "gallery",
+    "cc0bf229-12d7-438e-bc2c-959236ecafb6": {
+      "type": "custom-liquid",
       "settings": {
-        "gallery_image": "shopify:\/\/shop_images\/download_2.jpg",
-        "gallery_title": "Washing"
-      }
-    },
-    "5a510c33-21e0-44ff-a59c-da2072d5734d": {
-      "type": "gallery",
-      "settings": {
-        "gallery_image": "shopify:\/\/shop_images\/download_1.jpg",
-        "gallery_title": "Nirma"
+        "custom_liquid": "contuct as",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "footer": {
@@ -63,8 +58,7 @@
     }
   },
   "order": [
-    "1b6d961e-4892-416c-ad3f-cd3624635db8",
-    "5a510c33-21e0-44ff-a59c-da2072d5734d",
+    "cc0bf229-12d7-438e-bc2c-959236ecafb6",
     "footer"
   ]
 }
