@@ -225,6 +225,7 @@
         "88b24450-0b6c-448b-9ec4-f8a9cf2b29cf": {
           "type": "column",
           "settings": {
+            "myImage": "shopify:\/\/shop_images\/womens-red-t-shirt_925x_e43eff06-6515-4057-a3ff-e7af58ef2380.jpg",
             "title": "Red Tshirt",
             "link": "shopify:\/\/products\/funky-tshirt"
           }
@@ -232,6 +233,7 @@
         "625b8422-1c6c-47ce-8f13-41493b137112": {
           "type": "column",
           "settings": {
+            "myImage": "shopify:\/\/shop_images\/young-female-models-denim_925x_527a9967-cf49-4a71-963b-c2c5512c428d.jpg",
             "title": "RRR",
             "link": "shopify:\/\/products\/tshirt"
           }
