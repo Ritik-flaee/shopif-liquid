@@ -33,6 +33,11 @@
           "settings": {
           }
         },
+        "807cebaf-e4f1-4f8b-94c3-6ebe5128b6f1": {
+          "type": "shopify:\/\/apps\/nw-custom-pricing-wholesale\/blocks\/app-block\/a3760cbf-f05e-4221-91ef-15914e6adae5",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -104,6 +109,7 @@
         "title",
         "caption",
         "price",
+        "807cebaf-e4f1-4f8b-94c3-6ebe5128b6f1",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -131,7 +137,6 @@
     },
     "image-with-text": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
@@ -162,6 +167,7 @@
         "image-with-text-1",
         "634339f3-dcd8-40aa-bd98-ff5dc033d850"
       ],
+      "disabled": true,
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -178,7 +184,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -205,6 +210,7 @@
         "column-0",
         "column-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
