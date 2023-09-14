@@ -148,7 +148,7 @@
       },
       "13102731445781961921": {
         "type": "shopify:\/\/apps\/k-tiered-pricing-for-quantity\/blocks\/app-embeded\/e9fca694-ce1c-4130-b0af-6845db35b349",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
