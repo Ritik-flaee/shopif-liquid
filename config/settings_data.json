@@ -134,7 +134,7 @@
     "blocks": {
       "841790212690400676": {
         "type": "shopify:\/\/apps\/nw-custom-pricing-wholesale\/blocks\/app-embed\/a3760cbf-f05e-4221-91ef-15914e6adae5",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "ele-line-item-total": ".price--end",
           "ele-line-item-price": "div.product-option",
@@ -144,6 +144,12 @@
           "ele-checkout-btn": "#checkout, #CartDrawer-Checkout",
           "ele-cart-remove-button": ".cart-remove-button",
           "ele-product-add-to-cart": ".product-form__submit"
+        }
+      },
+      "13102731445781961921": {
+        "type": "shopify:\/\/apps\/k-tiered-pricing-for-quantity\/blocks\/app-embeded\/e9fca694-ce1c-4130-b0af-6845db35b349",
+        "disabled": false,
+        "settings": {
         }
       }
     },
