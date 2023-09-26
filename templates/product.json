@@ -33,8 +33,8 @@
           "settings": {
           }
         },
-        "807cebaf-e4f1-4f8b-94c3-6ebe5128b6f1": {
-          "type": "shopify:\/\/apps\/nw-custom-pricing-wholesale\/blocks\/app-block\/a3760cbf-f05e-4221-91ef-15914e6adae5",
+        "5026ca57-d860-4db0-bdb1-85b1091de305": {
+          "type": "shopify:\/\/apps\/devwall\/blocks\/app-block\/024d59c1-b810-403c-8f9b-f352d7f9e830",
           "settings": {
           }
         },
@@ -109,7 +109,7 @@
         "title",
         "caption",
         "price",
-        "807cebaf-e4f1-4f8b-94c3-6ebe5128b6f1",
+        "5026ca57-d860-4db0-bdb1-85b1091de305",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
