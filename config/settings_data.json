@@ -141,7 +141,7 @@
           "ele-cart-item-total": ".totals__subtotal-value",
           "ele-cart-container": ".cart-item",
           "ele-qty-input": ".quantity__input",
-          "ele-checkout-btn": "#checkout, #CartDrawer-Checkout, .cart__checkout-button.button",
+          "ele-checkout-btn": "#checkout, #CartDrawer-Checkout",
           "ele-cart-remove-button": ".cart-remove-button",
           "ele-product-add-to-cart": ".product-form__submit"
         }
